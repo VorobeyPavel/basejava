@@ -1,12 +1,5 @@
 package HomeWork7.Person_and_Animal;
 
-import obj.dto.Man;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
-
 public class RandomString {
     static String random (int stringLength) {
         String s = "ЁЙЦУКЕНГШЩЗХЪЭЖДЛОРПАВЫФЯЧСМИТЬБЮQWERTYUIOPLKJHGFDSAMNBVCXZёйцукенгшщзхъэждлорпавыфячсмитьбюqwertyuioplkjhgfdsamnbvcxz ";

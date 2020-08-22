@@ -4,28 +4,27 @@ public class Lab1_2 {
     public static void main(String[] args) {
         int a=42;   //101010
         int b=15;   //1111
-        System.out.println(~42+" "+~15);            //-101011   -10000
-        System.out.println(42&15);  //1010
-        System.out.println(42|15);  //101111
-        System.out.println(42^15);  //100101
-        System.out.println((42>>1)+" "+(15>>1));    //10101 111
-        System.out.println((42>>>1)+" "+(15>>>1));  //10101 111
-        System.out.println((42<<1)+" "+(15<<1));    //1010100   11110
-        System.out.println((a>>=1)+" "+(b>>=1));    //10101 111
-        a=42;  b=15;
-        System.out.println((a&=15)+" "+(b&=42));    //1010  1010
-        a=42;  b=15;
-        System.out.println((a|=15)+" "+(b|=42));    //101111    101111
-        a=42;  b=15;
-        System.out.println((a^=15)+" "+(b^=42));    //100101    100101
-        a=42;  b=15;
-        System.out.println((a>>=1)+" "+(b>>=1));    //10101 111
-        a=42;  b=15;
-        System.out.println((a<<=1)+" "+(b<<=1));    //1010100   11110
-        a=42;  b=15;
-        System.out.println((a>>>=1)+" "+(b>>>=1));  //10101 111
-
-
-
+        int c=0;
+        System.out.println((c=~42)+" "+Integer.toBinaryString(c));      //-43   11111111111111111111111111010101
+        System.out.println((c=~15)+" "+Integer.toBinaryString(c));      //-16   11111111111111111111111111110000
+        System.out.println((c=42&15)+" "+Integer.toBinaryString(c));    //10  1010
+        System.out.println((c=42|15)+" "+Integer.toBinaryString(c));    //47 101111
+        System.out.println((c=42^15)+" "+Integer.toBinaryString(c));    //37 100101
+        System.out.println((c=42>>15)+" "+Integer.toBinaryString(c));   //0
+        System.out.println((c=42>>>15)+" "+Integer.toBinaryString(c));  //0
+        System.out.println((c=42<<15)+" "+Integer.toBinaryString(c));   //1376256 101010000000000000000
+        System.out.println((c=a>>=15)+" "+Integer.toBinaryString(c));   //0
+        a=42;
+        System.out.println((c=a&=15)+" "+Integer.toBinaryString(c));    //10 1010
+        a=42;
+        System.out.println((c=a|=15)+" "+Integer.toBinaryString(c));    //47 101111
+        a=42;
+        System.out.println((c=a^=15)+" "+Integer.toBinaryString(c));    //37 100101
+        a=42;
+        System.out.println((c=a>>=15)+" "+Integer.toBinaryString(c));   //0
+        a=42;
+        System.out.println((c=a<<=15)+" "+Integer.toBinaryString(c));   //1376256 101010000000000000000
+        a=42;
+        System.out.println((c=a>>>=15)+" "+Integer.toBinaryString(c));  //0
     }
 }

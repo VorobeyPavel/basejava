@@ -8,7 +8,8 @@ public class Main {
         List<Person> listPerson=new LinkedList<>();
         long start = System.currentTimeMillis();
         for (int i = 0; i < 1_000_000; i++) {
-            listPerson.add(new Person());
+
+            listPerson.add(new Person(RandomString.random(15),10000+(int)(Math.random()*10000)));
         }
         long stop = System.currentTimeMillis();
         System.out.println(stop - start);   // 1354-Скорость заполнения
@@ -27,7 +28,7 @@ public class Main {
         List<Animal> listAnimal=new ArrayList<>();
         long start2 = System.currentTimeMillis();
         for (int i = 0; i < 1_000_000; i++) {
-            listAnimal.add(new Animal());
+            listAnimal.add(new Animal(RandomString.random(15),1+(int)(Math.random()*15)));
         }
         long stop2 = System.currentTimeMillis();
         System.out.println(stop2 - start2);   // 975-Скорость заполнения
@@ -38,7 +39,6 @@ public class Main {
         AnimalAgeComparator ageComparator=new AnimalAgeComparator();
         listAnimalSort.sort(ageComparator);
 //        System.out.println(listAnimalSort);
-
 
         System.out.println("_________________-");
 
@@ -55,6 +55,6 @@ public class Main {
         }
         System.out.println(listAnimalSort);
 
-
     }
+
 }

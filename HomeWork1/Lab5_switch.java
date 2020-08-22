@@ -7,18 +7,15 @@ public class Lab5_switch {
         Scanner sc=new Scanner(System.in);
         System.out.println("Ведите имя");
         String name=sc.nextLine();
-        String name1="Вася";
-        String name2="Анастасия";
- //     switch (name1 || name2) {
- //         case name1:
- //             System.out.println("Привет \n"+"Я тебя так долго ждал");
- //             break;
- //         case name2:
- //             System.out.println("Я тебя так долго ждал");
- //         default:
- //             System.out.println("Добрый день, а вы кто?");
- //             System.out.println("Ваше имя: "+name);
- //      }
-
+        switch (name) {
+            case "Вася":
+                System.out.println("Привет \n"+"Я тебя так долго ждал");
+                break;
+            case "Анастасия":
+                 System.out.println("Я тебя так долго ждал");
+            default:
+                 System.out.println("Добрый день, а вы кто?");
+                 System.out.println("Ваше имя: "+name);
+          }
     }
 }
